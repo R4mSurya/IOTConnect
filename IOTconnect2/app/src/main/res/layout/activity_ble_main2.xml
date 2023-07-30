@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8D5D3"
+    tools:context=".ble.bleMainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/macAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="macAddress" />
+
+        <TextView
+            android:id="@+id/rssid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RSSID" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status : Connected" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/discont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="@color/black"
+        android:elevation="100px"
+        android:text="Disconnect"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FBFAFA"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/ButtonStyle.DarkMode"/>
+
+    <TextView
+        android:id="@+id/heartvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/discont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <!--<com.jjoe64.graphview.GraphView
+        android:id="@+id/graphView"
+        android:layout_width="398dp"
+        android:layout_height="357dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/discont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartvalue" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
