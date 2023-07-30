@@ -24,4 +24,4 @@ The app uses wifiManager and wifiConfiguration to connect to devices.
 <br>
 <br>
 **NFC:**<br>
-Not implemented so far.
+Not implemented so far. If clicked for NFC option, it displays whether the phone supports NFC feature.
